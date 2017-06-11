@@ -1,7 +1,7 @@
 fizzbuzz = ''
 
-start = int(input("Start Value:"))
-end = int(input("End Value:"))
+start = int(input("Enter the Start Value:"))
+end = int(input(" Enter the end value End Value:"))
 
 for i in range(start,end+1):
     if i%3 == 0:
