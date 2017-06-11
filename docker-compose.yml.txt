@@ -1,0 +1,14 @@
+version: '2'
+services:
+  redis:
+    image: "redis:alpine"
+
+web:
+    build: .
+    ports:
+     - "80:80"
+    volumes:
+     - .:/sbin/sreracha
+    depends_on:   #webapp is dependent on the redis as given in the instructions.
+      - redis
+    
